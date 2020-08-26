@@ -1,0 +1,193 @@
+CRITICAL - 2020-08-18 08:57:44 --> Invalid file: login.php
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#2 /var/www/html/ci4app/app/Controllers/Auth/Login.php(11): view()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->index()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#8 {main}
+CRITICAL - 2020-08-18 09:31:53 --> syntax error, unexpected '}'
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 /var/www/html/ci4app/app/Controllers/Auth/Login.php(7): spl_autoload_call()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(365): require_once('/var/www/html/c...')
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#7 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#8 [internal function]: spl_autoload_call()
+#9 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(869): class_exists()
+#10 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#11 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#13 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#14 {main}
+CRITICAL - 2020-08-18 09:32:12 --> Undefined property: CodeIgniter\View\View::$namaaplikasi
+#0 /var/www/html/ci4app/app/Views/template/headerstart.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Auth/Login.php(14): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->index()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-18 22:05:10 --> Undefined variable: title
+#0 /var/www/html/ci4app/app/Views/template/header.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Home.php(15): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Home->test()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-18 22:05:31 --> Undefined variable: title
+#0 /var/www/html/ci4app/app/Views/template/header.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Home.php(19): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Home->test()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-18 22:05:39 --> Undefined variable: title
+#0 /var/www/html/ci4app/app/Views/template/header.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Home.php(19): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Home->test()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-18 23:00:24 --> Undefined variable: title
+#0 /var/www/html/ci4app/app/Views/template/auth.php(10): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(257): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#4 /var/www/html/ci4app/app/Controllers/Auth/Login.php(15): view()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->index()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#10 {main}
+CRITICAL - 2020-08-18 23:37:15 --> Undefined index: username
+#0 /var/www/html/ci4app/app/Controllers/Auth/Login.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->cek()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-18 23:37:32 --> Function name must be a string
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->cek()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-18 23:41:10 --> Unknown column 'test' in 'field list'
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(331): mysqli->query()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Model.php(404): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Model.php(436): CodeIgniter\Model->find()
+#6 /var/www/html/ci4app/app/Controllers/Auth/Login.php(25): CodeIgniter\Model->findColumn()
+#7 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->cek()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#12 {main}
+CRITICAL - 2020-08-18 23:47:09 --> Undefined index: username
+#0 /var/www/html/ci4app/app/Controllers/Auth/Login.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->cek()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-18 23:48:52 --> Trying to get property 'username' of non-object
+#0 /var/www/html/ci4app/app/Controllers/Auth/Login.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->cek()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-18 23:49:04 --> Trying to get property 'username' of non-object
+#0 /var/www/html/ci4app/app/Controllers/Auth/Login.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->cek()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-18 23:49:23 --> Array to string conversion
+#0 /var/www/html/ci4app/app/Controllers/Auth/Login.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->cek()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-18 23:53:59 --> Array to string conversion
+#0 /var/www/html/ci4app/app/Controllers/Auth/Login.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->cek()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-18 23:54:34 --> Array to string conversion
+#0 /var/www/html/ci4app/app/Controllers/Auth/Login.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->cek()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-18 23:54:42 --> Array to string conversion
+#0 /var/www/html/ci4app/app/Controllers/Auth/Login.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->cek()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-18 23:55:56 --> Cannot use object of type App\Models\UserloginModel as array
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->cek()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-18 23:56:20 --> syntax error, unexpected ':', expecting ']'
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(869): class_exists()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(394): CodeIgniter\CodeIgniter->startController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-18 23:59:31 --> Trying to access array offset on value of type null
+#0 /var/www/html/ci4app/app/Controllers/Auth/Login.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->cek()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}

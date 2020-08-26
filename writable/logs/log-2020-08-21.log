@@ -1,0 +1,202 @@
+CRITICAL - 2020-08-21 09:25:18 --> Undefined index: gambar
+#0 /var/www/html/ci4app/app/Views/template/app/sidebaradmin.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(48): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-21 09:34:22 --> Undefined index: username
+#0 /var/www/html/ci4app/app/Controllers/BaseController.php(51): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(891): App\Controllers\BaseController->initController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-21 09:35:37 --> Cannot use object of type CodeIgniter\Session\Session as array
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(891): App\Controllers\BaseController->initController()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-21 09:36:16 --> Undefined index: username
+#0 /var/www/html/ci4app/app/Controllers/BaseController.php(51): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(891): App\Controllers\BaseController->initController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-21 09:38:29 --> Undefined index: username
+#0 /var/www/html/ci4app/app/Controllers/Admin.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-21 09:38:31 --> Undefined index: username
+#0 /var/www/html/ci4app/app/Controllers/Admin.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-21 09:39:54 --> Undefined index: username
+#0 /var/www/html/ci4app/app/Controllers/BaseController.php(50): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(891): App\Controllers\BaseController->initController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-21 09:44:58 --> Undefined index: gambar
+#0 /var/www/html/ci4app/app/Views/template/app/sidebaradmin.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(48): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-21 09:50:12 --> Undefined index: gambar
+#0 /var/www/html/ci4app/app/Views/template/app/sidebaradmin.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(48): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-21 09:50:48 --> Undefined index: gambar
+#0 /var/www/html/ci4app/app/Views/template/app/sidebaradmin.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(48): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-21 09:57:00 --> Cannot pass parameter 1 by reference
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(891): App\Controllers\BaseController->initController()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-21 09:57:26 --> Undefined index: gambar
+#0 /var/www/html/ci4app/app/Views/template/app/sidebaradmin.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(48): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-21 09:57:30 --> Undefined index: gambar
+#0 /var/www/html/ci4app/app/Views/template/app/sidebaradmin.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(48): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-21 10:00:08 --> You must set the database table to be used with your query.
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Model.php(1237): CodeIgniter\Database\BaseConnection->table()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Model.php(1764): CodeIgniter\Model->builder()
+#2 /var/www/html/ci4app/app/Models/CekloginModel.php(19): CodeIgniter\Model->__get()
+#3 /var/www/html/ci4app/app/Controllers/BaseController.php(51): App\Models\CekloginModel->cek()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(891): App\Controllers\BaseController->initController()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-21 22:38:42 --> Undefined index: gambar
+#0 /var/www/html/ci4app/app/Views/template/app/sidebaradmin.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(48): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-21 22:42:41 --> Undefined index: username
+#0 /var/www/html/ci4app/app/Controllers/Auth/Login.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->index()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-21 22:43:52 --> Undefined index: gambar
+#0 /var/www/html/ci4app/app/Views/template/app/sidebaradmin.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(48): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-21 22:44:14 --> Undefined index: gambar
+#0 /var/www/html/ci4app/app/Views/template/app/sidebaradmin.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(48): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-21 22:48:35 --> Undefined index: role_id
+#0 /var/www/html/ci4app/app/Controllers/Admin.php(9): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-21 23:12:13 --> Allowed fields must be specified for model: App\Models\RouterModel
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Model.php(1265): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Model.php(735): CodeIgniter\Model->doProtectFields()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Model.php(574): CodeIgniter\Model->insert()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(74): CodeIgniter\Model->save()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->addrouter()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-21 23:33:41 --> Invalid argument supplied for foreach()
+#0 /var/www/html/ci4app/app/Views/template/app/footer.php(90): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(85): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}

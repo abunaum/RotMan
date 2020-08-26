@@ -1,0 +1,128 @@
+CRITICAL - 2020-08-20 00:04:29 --> Call to undefined method App\Models\RouterModel::getResultArray
+#0 /var/www/html/ci4app/app/Controllers/Admin.php(10): CodeIgniter\Model->__call()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-20 00:08:43 --> Call to a member function countAllResults() on array
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:09:34 --> Call to a member function countAllResults() on array
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:09:57 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:10:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:10:27 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:10:28 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:10:53 --> Undefined variable: totalrouter
+#0 /var/www/html/ci4app/app/Controllers/Admin.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-20 00:11:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:14:17 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:14:27 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:15:43 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:16:00 --> Call to a member function get() on array
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:16:37 --> Call to a member function countAllResults() on array
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:16:48 --> Call to a member function countAllResults() on array
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:17:32 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::get()
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:20:13 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}
+CRITICAL - 2020-08-20 00:20:27 --> Call to a member function countAllResults() on array
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->index()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#5 {main}

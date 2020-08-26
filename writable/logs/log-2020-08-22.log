@@ -1,0 +1,92 @@
+CRITICAL - 2020-08-22 01:48:23 --> whereIn() expects $values to be of type array or closure
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(853): CodeIgniter\Database\BaseBuilder->_whereIn()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Model.php(1818): CodeIgniter\Database\BaseBuilder->whereIn()
+#2 /var/www/html/ci4app/app/Controllers/Admin.php(158): CodeIgniter\Model->__call()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->detailrouter()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#8 {main}
+CRITICAL - 2020-08-22 01:56:48 --> Call to undefined method App\Models\RouterModel::getRouter
+#0 /var/www/html/ci4app/app/Controllers/Admin.php(158): CodeIgniter\Model->__call()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->detailrouter()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-22 01:57:58 --> Call to undefined method App\Models\RouterModel::getResultArray
+#0 /var/www/html/ci4app/app/Controllers/Admin.php(159): CodeIgniter\Model->__call()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->detailrouter()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-22 01:58:16 --> Call to undefined method App\Models\RouterModel::getResultArray
+#0 /var/www/html/ci4app/app/Controllers/Admin.php(159): CodeIgniter\Model->__call()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->detailrouter()
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#6 {main}
+CRITICAL - 2020-08-22 02:03:51 --> Undefined index: ip
+#0 /var/www/html/ci4app/app/Views/admin/router.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(172): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->detailrouter()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-22 02:06:34 --> Undefined index: ip
+#0 /var/www/html/ci4app/app/Views/admin/router.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/c...')
+#2 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#3 /var/www/html/ci4app/app/Controllers/Admin.php(173): view()
+#4 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->detailrouter()
+#5 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#6 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#7 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#9 {main}
+CRITICAL - 2020-08-22 09:48:55 --> Class 'App\Filters\ApiAuth' not found
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(382): CodeIgniter\Filters\Filters->run()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#2 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#4 {main}
+CRITICAL - 2020-08-22 09:50:30 --> Class 'App\Filters\ApiAuth' not found
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(382): CodeIgniter\Filters\Filters->run()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#2 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#4 {main}
+CRITICAL - 2020-08-22 09:51:51 --> Class 'App\Filters\ApiAuth' not found
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(382): CodeIgniter\Filters\Filters->run()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#2 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#4 {main}
+CRITICAL - 2020-08-22 09:52:39 --> Class 'App\Filters\ApiAuth' not found
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(382): CodeIgniter\Filters\Filters->run()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#2 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#4 {main}
+CRITICAL - 2020-08-22 09:52:40 --> Class 'App\Filters\ApiAuth' not found
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(382): CodeIgniter\Filters\Filters->run()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#2 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#4 {main}
+CRITICAL - 2020-08-22 09:52:40 --> Class 'App\Filters\ApiAuth' not found
+#0 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(382): CodeIgniter\Filters\Filters->run()
+#1 /var/www/html/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#2 /var/www/html/ci4app/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 /var/www/html/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/c...')
+#4 {main}
