@@ -104,6 +104,26 @@ class Admin extends BaseController
     }
     public function detailrouter($id = '')
     {
+        if (isset($_SESSION['pesan'])) {
+            $pesan = $_SESSION['pesan'];
+            if ($pesan == 'router-gagal') {
+                $flashicon = 'error';
+                $flashjudul = 'Maaf';
+                $flashtext = 'Router gagal terhubung.';
+            }
+            $flash =    "<script>
+                        function pesan() {
+                            Swal.fire({
+                                icon: '" . $flashicon . "',
+                                title: '" . $flashjudul . "',
+                                text: '" . $flashtext . "'
+                                })
+                            }
+                        pesan();
+                    </script>";
+        } else {
+            $flash = '';
+        }
         if ($id == '') {
             return redirect()->to('/admin');
         } else {
@@ -116,7 +136,11 @@ class Admin extends BaseController
                 $data = [
                     'title' => 'Dashboard',
                     'namaaplikasi' => $this->namaaplikasi,
-                    'router' => $datarouter
+                    'router' => $datarouter,
+                    'jsfooter' => array(
+                        '/assets/plugins/swal/sweetalert2.all.min.js'
+                    ),
+                    'pesan' => $flash
                 ];
                 echo view('template/app/header', $data);
                 echo view('template/app/sidebaradmin', $data);
@@ -126,7 +150,7 @@ class Admin extends BaseController
             }
         }
     }
-    public function connectrouter()
+    public function connectrouter($id = '0')
     {
         $ip = $this->request->getVar('ip');
         $port = $this->request->getVar('port');
@@ -146,16 +170,10 @@ class Admin extends BaseController
                 'namarouter' => $nama,
                 'alamatlogin' => $login
             ];
-            echo 'joss';
-            $routerboard = $api->comm("/system/routerboard/print");
-            dd($routerboard);
-            // $this->session->set_userdata($data);
-            // redirect('router');
-            // exit;
+            return redirect()->to('router');
         } else {
-            echo 'nub';
-            // $this->session->set_flashdata('pesan', 'router-gagal');
-            // redirect('admin');
+            $this->session->setTempdata('pesan', 'router-gagal', 3);
+            return redirect()->to(base_url('/admin/detailrouter') . '/' . $id);
         }
         $api->disconnect();
     }

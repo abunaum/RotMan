@@ -16,7 +16,7 @@
                     <div class="card-body">
                         <div class="card-title">Detail Router <?= $router[0]['nama']; ?></div>
                         <hr>
-                        <form action="<?= base_url('admin/connect'); ?>" method="post">
+                        <form action="<?= base_url('admin/connect') . "/" . $router[0]['id']; ?>" method="post">
                             <div class="form-group row">
                                 <label for="ip" class="col-sm-2 col-form-label">IP</label>
                                 <div class="col-sm-10">

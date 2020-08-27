@@ -40,7 +40,7 @@ $routes->group('admin', ['filter' => 'authuser'], function ($routes) {
 	$routes->post('tambah-router', 'Admin::addrouter');
 	$routes->delete('router/(:num)', 'Admin::hapusrouter/$1');
 	$routes->get('router-detail/(:num)', 'Admin::detailrouter/$1');
-	$routes->post('connect', 'Admin::connectrouter');
+	$routes->post('connect/(:num)', 'Admin::connectrouter/$1');
 });
 
 /**
