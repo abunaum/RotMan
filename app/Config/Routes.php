@@ -42,6 +42,9 @@ $routes->group('admin', ['filter' => 'authuser'], function ($routes) {
 	$routes->get('router-detail/(:num)', 'Admin::detailrouter/$1');
 	$routes->post('connect/(:num)', 'Admin::connectrouter/$1');
 });
+$routes->group('router', ['filter' => 'authrouter'], function ($routes) {
+	$routes->get('/', 'Router/Beranda::index');
+});
 
 /**
  * --------------------------------------------------------------------

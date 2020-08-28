@@ -12,7 +12,8 @@ class Filters extends BaseConfig
 		'csrf'     => \CodeIgniter\Filters\CSRF::class,
 		'toolbar'  => \CodeIgniter\Filters\DebugToolbar::class,
 		'honeypot' => \CodeIgniter\Filters\Honeypot::class,
-		'authuser' => \App\Filters\Authadmin::class,
+		'authuser' => \App\Filters\Auth::class,
+		'authrouter' => \App\Filters\Cekrouter::class,
 	];
 
 	// Always applied before every request

@@ -163,14 +163,16 @@ class Admin extends BaseController
         $cek = $api->connect($ip . ":" . $port, $username, $password);
         if ($cek) {
             $data = [
-                'ip' => $ip,
-                'port' => $port,
+                'router' => true,
+                'iprouter' => $ip,
+                'portrouter' => $port,
                 'usernamerouter' => $username,
-                'password' => $password,
+                'passwordrouter' => $password,
                 'namarouter' => $nama,
-                'alamatlogin' => $login
+                'alamatloginrouter' => $login
             ];
-            return redirect()->to('router');
+            $this->session->set($data);
+            return redirect()->to(base_url('router'));
         } else {
             $this->session->setTempdata('pesan', 'router-gagal', 3);
             return redirect()->to(base_url('/admin/detailrouter') . '/' . $id);
