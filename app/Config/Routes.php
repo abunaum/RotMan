@@ -35,12 +35,12 @@ $routes->get('/', 'Auth/Login::index');
 $routes->get('/login', 'Auth/Login::index');
 $routes->post('/cek', 'Auth/Login::cek');
 $routes->get('/logout', 'Auth/Logout::index');
-$routes->group('admin', ['filter' => 'authuser'], function ($routes) {
-	$routes->get('/', 'Admin::index');
-	$routes->post('tambah-router', 'Admin::addrouter');
-	$routes->delete('router/(:num)', 'Admin::hapusrouter/$1');
-	$routes->get('router-detail/(:num)', 'Admin::detailrouter/$1');
-	$routes->post('connect/(:num)', 'Admin::connectrouter/$1');
+$routes->group('admin', ['filter' => 'auth'], function ($routes) {
+	$routes->get('/', 'Admin::index', ['filter' => 'authadmin']);
+	$routes->post('tambah-router', 'Admin::addrouter', ['filter' => 'authadmin']);
+	$routes->delete('router/(:num)', 'Admin::hapusrouter/$1', ['filter' => 'authadmin']);
+	$routes->get('router-detail/(:num)', 'Admin::detailrouter/$1', ['filter' => 'authadmin']);
+	$routes->post('connect/(:num)', 'Admin::connectrouter/$1', ['filter' => 'authadmin']);
 });
 $routes->group('router', ['filter' => 'authrouter'], function ($routes) {
 	$routes->get('/', 'Router/Beranda::index');

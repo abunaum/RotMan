@@ -1,0 +1,14 @@
+CRITICAL - 2020-08-28 01:13:31 --> authadmin filter must have a matching alias defined.
+#0 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Filters/Filters.php(324): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(373): CodeIgniter\Filters\Filters->enableFilter()
+#2 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/RotMan/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/R...')
+#5 {main}
+CRITICAL - 2020-08-28 01:15:55 --> authadmin filter must have a matching alias defined.
+#0 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Filters/Filters.php(324): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias()
+#1 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(373): CodeIgniter\Filters\Filters->enableFilter()
+#2 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#3 /var/www/html/RotMan/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/R...')
+#5 {main}

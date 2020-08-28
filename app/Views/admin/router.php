@@ -57,6 +57,7 @@
                                 <label class="col-sm-2 col-form-label"></label>
                                 <div class="col-sm-10">
                                     <button type="submit" class="btn btn-light waves-effect waves-light m-1"><i class="zmdi zmdi-flash"></i> Connect</button>
+                                    <button class="btn btn-light waves-effect waves-light m-1" data-toggle="modal" data-target="#EditRouterModal"><i class="ti-pencil"></i> Edit</button>
                                 </div>
                             </div>
                         </form>

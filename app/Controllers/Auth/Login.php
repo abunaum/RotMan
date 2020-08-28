@@ -8,6 +8,15 @@ class Login extends BaseController
 {
     public function index()
     {
+        if (isset($_SESSION['role_id'])) {
+            $role = $_SESSION['role_id'];
+            if ($role == 1) {
+                return redirect()->to(base_url('admin'));
+            }
+            if ($role == 2) {
+                return redirect()->to(base_url('user'));
+            }
+        }
         if (isset($_SESSION['pesan'])) {
             $pesan = $_SESSION['pesan'];
         } else {
@@ -31,23 +40,30 @@ class Login extends BaseController
         $user = $this->userlogin->where('username', $username)->findAll();
         if ($user) {
             $datapassword = $user[0]['password'];
+            $role = $user[0]['role_id'];
             if (password_verify($password, $datapassword)) {
                 $data = [
                     'username' => $user[0]['username'],
                     'nama' => $user[0]['nama'],
                     'gambar' => $user[0]['gambar'],
-                    'role_id' => $user[0]['role_id'],
+                    'role_id' => $role,
                     'islogin' => true
                 ];
                 $this->session->set($data);
-                return redirect()->to('/admin');
+                if ($role == 1) {
+                    return redirect()->to(base_url('admin'));
+                } else if ($role == 2) {
+                    return redirect()->to(base_url('user'));
+                } else {
+                    echo 'error';
+                }
             } else {
                 $this->session->setTempdata('pesan', 'password-salah', 3);
-                return redirect()->to('/login');
+                return redirect()->to(base_url());
             }
         } else {
             $this->session->setTempdata('pesan', 'login-error', 3);
-            return redirect()->to('/login');
+            return redirect()->to(base_url());
         }
     }
 }
