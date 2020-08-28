@@ -12,3 +12,11 @@ CRITICAL - 2020-08-28 01:15:55 --> authadmin filter must have a matching alias d
 #3 /var/www/html/RotMan/public/index.php(45): CodeIgniter\CodeIgniter->run()
 #4 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/R...')
 #5 {main}
+CRITICAL - 2020-08-28 02:14:23 --> Return value of CodeIgniter\Router\RouteCollection::getFilterForRoute() must be of the type string, array returned
+#0 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Router/Router.php(181): CodeIgniter\Router\RouteCollection->getFilterForRoute()
+#1 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(793): CodeIgniter\Router\Router->handle()
+#2 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(364): CodeIgniter\CodeIgniter->tryToRouteIt()
+#3 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/RotMan/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/R...')
+#6 {main}

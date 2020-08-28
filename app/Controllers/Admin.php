@@ -102,7 +102,7 @@ class Admin extends BaseController
         }
         return redirect()->to('/admin');
     }
-    public function detailrouter($id = '')
+    public function detailrouter($id = 0)
     {
         if (isset($_SESSION['pesan'])) {
             $pesan = $_SESSION['pesan'];
@@ -124,7 +124,7 @@ class Admin extends BaseController
         } else {
             $flash = '';
         }
-        if ($id == '') {
+        if ($id == 0) {
             return redirect()->to('/admin');
         } else {
             $cekrouter = $this->router->where('id', $id)->findAll();
@@ -150,7 +150,7 @@ class Admin extends BaseController
             }
         }
     }
-    public function connectrouter($id = '0')
+    public function connectrouter($id = 0)
     {
         $ip = $this->request->getVar('ip');
         $port = $this->request->getVar('port');
@@ -178,5 +178,8 @@ class Admin extends BaseController
             return redirect()->to(base_url('/admin/detailrouter') . '/' . $id);
         }
         $api->disconnect();
+    }
+    public function editrouter($id = 0)
+    {
     }
 }

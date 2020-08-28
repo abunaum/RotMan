@@ -57,10 +57,48 @@
                                 <label class="col-sm-2 col-form-label"></label>
                                 <div class="col-sm-10">
                                     <button type="submit" class="btn btn-light waves-effect waves-light m-1"><i class="zmdi zmdi-flash"></i> Connect</button>
-                                    <button class="btn btn-light waves-effect waves-light m-1" data-toggle="modal" data-target="#EditRouterModal"><i class="ti-pencil"></i> Edit</button>
+                                    <a href="javaScript:void();" class="btn btn-light waves-effect waves-light m-1" data-toggle="modal" data-target="#EditRouterModal"><i class="ti-pencil"></i> Edit</a>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
                 <!-- End Row-->
+                <div class="modal fade" id="EditRouterModal" tabindex="-1" role="dialog" aria-labelledby="EditRouterModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="EditRouterModalLabel">Edit Router</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <form action="<?= base_url('admin/edit-router') . "/" . $router[0]['id']; ?>" method="post">
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="ip" name="ip" placeholder="IP" value="<?= $router[0]['ip']; ?>" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="port" name="port" placeholder="PORT" value="<?= $router[0]['port']; ?>" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $router[0]['username']; ?>" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="password" name="password" placeholder="Password" value="<?= $router[0]['password']; ?>" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Hotspot" value="<?= $router[0]['nama']; ?>" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="login" name="login" placeholder="Alamat Login Hotspot" value="<?= $router[0]['login']; ?>" required>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                    <button type="submit" class="btn btn-primary">Edit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
