@@ -1,0 +1,10 @@
+CRITICAL - 2020-08-30 00:32:10 --> whereIn() expects $values to be of type array or closure
+#0 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(853): CodeIgniter\Database\BaseBuilder->_whereIn()
+#1 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Model.php(1818): CodeIgniter\Database\BaseBuilder->whereIn()
+#2 /var/www/html/RotMan/app/Controllers/Admin.php(203): CodeIgniter\Model->__call()
+#3 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Admin->editrouter()
+#4 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#5 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#6 /var/www/html/RotMan/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/R...')
+#8 {main}

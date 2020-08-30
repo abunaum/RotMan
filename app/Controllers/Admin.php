@@ -111,6 +111,11 @@ class Admin extends BaseController
                 $flashjudul = 'Maaf';
                 $flashtext = 'Router gagal terhubung.';
             }
+            if ($pesan == 'router-update') {
+                $flashicon = 'success';
+                $flashjudul = 'Mantap';
+                $flashtext = 'Router berhasil di edit.';
+            }
             $flash =    "<script>
                         function pesan() {
                             Swal.fire({
@@ -181,5 +186,22 @@ class Admin extends BaseController
     }
     public function editrouter($id = 0)
     {
+        $ip = $this->request->getVar('ip');
+        $port = $this->request->getVar('port');
+        $username = $this->request->getVar('username');
+        $password = $this->request->getVar('password');
+        $nama = $this->request->getVar('nama');
+        $login = $this->request->getVar('login');
+        $data = [
+            'ip' => $ip,
+            'port' => $port,
+            'username' => $username,
+            'password' => $password,
+            'nama' => $nama,
+            'login' => $login,
+        ];
+        $this->router->where('id', $id)->set($data)->update();
+        $this->session->setTempdata('pesan', 'router-update', 3);
+        return redirect()->to(base_url('/admin/detailrouter') . '/' . $id);
     }
 }
