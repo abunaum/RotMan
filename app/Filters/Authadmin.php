@@ -10,6 +10,11 @@ class Authadmin implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
+        if (!session()->get('islogin')) {
+            session()->setTempdata('pesan', 'belum-login', 3);
+            return redirect()->to(base_url('login'));
+        }
+
         if (session()->get('role_id') != 1) {
             $session_items = ['username', 'nama', 'gambar', 'role_id', 'islogin'];
             session()->remove($session_items);

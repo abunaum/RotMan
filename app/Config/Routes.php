@@ -31,19 +31,19 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Auth/Login::index');
-$routes->get('/login', 'Auth/Login::index');
+$routes->get('/', 'Auth/Login::index', ['filter' => 'auth']);
+$routes->get('/login', 'Auth/Login::index', ['filter' => 'auth']);
 $routes->post('/cek', 'Auth/Login::cek');
 $routes->get('/logout', 'Auth/Logout::index');
-$routes->group('admin', ['filter' => 'auth'], function ($routes) {
-	$routes->get('/', 'Admin::index', ['filter' => 'authadmin']);
-	$routes->post('edit-profile', 'Admin::editprofile', ['filter' => 'authadmin']);
-	$routes->post('tambah-router', 'Admin::addrouter', ['filter' => 'authadmin']);
-	$routes->post('edit-router/(:num)', 'Admin::editrouter/$1', ['filter' => 'authadmin']);
-	$routes->delete('router/(:num)', 'Admin::hapusrouter/$1', ['filter' => 'authadmin']);
-	$routes->get('router-detail/(:num)', 'Admin::detailrouter/$1', ['filter' => 'authadmin']);
-	$routes->post('connect/(:num)', 'Admin::connectrouter/$1', ['filter' => 'authadmin']);
-	$routes->get('/profile', 'Admin::profile', ['filter' => 'authadmin']);
+$routes->group('admin', ['filter' => 'authadmin'], function ($routes) {
+	$routes->get('/', 'Admin::index');
+	$routes->post('edit-profile', 'Admin::editprofile');
+	$routes->post('tambah-router', 'Admin::addrouter');
+	$routes->post('edit-router/(:num)', 'Admin::editrouter/$1');
+	$routes->delete('router/(:num)', 'Admin::hapusrouter/$1');
+	$routes->get('router-detail/(:num)', 'Admin::detailrouter/$1');
+	$routes->post('connect/(:num)', 'Admin::connectrouter/$1');
+	$routes->get('profile', 'Admin::profile');
 });
 $routes->group('router', ['filter' => 'authrouter'], function ($routes) {
 	$routes->get('/', 'Router/Beranda::index');
