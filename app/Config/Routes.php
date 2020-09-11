@@ -37,6 +37,8 @@ $routes->post('/cek', 'Auth/Login::cek');
 $routes->get('/logout', 'Auth/Logout::index');
 $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 	$routes->get('/', 'Admin::index', ['filter' => 'authadmin']);
+	$routes->get('/profile', 'Admin::profile', ['filter' => 'authadmin']);
+	$routes->post('edit-profile', 'Admin::editprofile', ['filter' => 'authadmin']);
 	$routes->post('tambah-router', 'Admin::addrouter', ['filter' => 'authadmin']);
 	$routes->post('edit-router/(:num)', 'Admin::editrouter/$1', ['filter' => 'authadmin']);
 	$routes->delete('router/(:num)', 'Admin::hapusrouter/$1', ['filter' => 'authadmin']);

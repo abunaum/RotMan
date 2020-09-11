@@ -204,4 +204,57 @@ class Admin extends BaseController
         $this->session->setTempdata('pesan', 'router-update', 3);
         return redirect()->to(base_url('/admin/detailrouter') . '/' . $id);
     }
+    public function profile()
+    {
+        if (isset($_SESSION['pesan'])) {
+            $pesan = $_SESSION['pesan'];
+            if ($pesan == 'router-ditambah') {
+                $flashicon = 'success';
+                $flashjudul = 'Mantap';
+                $flashtext = 'Router berhasil di tambah.';
+            }
+            if ($pesan == 'router-dihapus') {
+                $flashicon = 'success';
+                $flashjudul = 'Mantap';
+                $flashtext = 'Router berhasil di hapus.';
+            }
+            $flash =    "<script>
+                        function pesan() {
+                            Swal.fire({
+                                icon: '" . $flashicon . "',
+                                title: '" . $flashjudul . "',
+                                text: '" . $flashtext . "'
+                                })
+                            }
+                        pesan();
+                    </script>";
+        } else {
+            $flash = '';
+        }
+        $data = [
+            'title' => 'Profile',
+            'namaaplikasi' => $this->namaaplikasi,
+            'scfooter' => array(
+                "function previewImg() {
+                    const gambar = document.querySelector('#file');
+                    const gambarLabel = document.querySelector('.custom-file-label');
+                    const gambarPreview = document.querySelector('.img-preview');
+                    gambarLabel.textContent = gambar.files[0].name;
+                    const fileGambar = new FileReader();
+                    fileGambar.readAsDataURL(gambar.files[0]);
+                    fileGambar.onload = function(e) {
+                        gambarPreview.rsc = e.target.result;
+                    }
+                }
+                "
+            ),
+            'pesan' => $flash
+        ];
+        // dd($totalrouter);
+        echo view('template/app/header', $data);
+        echo view('template/app/sidebaradmin', $data);
+        echo view('template/app/topbar', $data);
+        echo view('admin/profile', $data);
+        echo view('template/app/footer', $data);
+    }
 }

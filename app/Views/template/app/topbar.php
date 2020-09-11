@@ -15,6 +15,12 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right">
                     <li class="dropdown-divider"></li>
+                    <a href="<?= base_url('admin/profile'); ?>">
+                        <li class="dropdown-item"><i class="icon-user mr-2"></i> Profile</li>
+                    </a>
+                    <a href="<?= base_url('admin/password'); ?>">
+                        <li class="dropdown-item"><i class="icon-lock mr-2"></i> Password</li>
+                    </a>
                     <a href="<?= base_url('logout'); ?>">
                         <li class="dropdown-item"><i class="icon-power mr-2"></i> Logout</li>
                     </a>
