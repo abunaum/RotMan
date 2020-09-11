@@ -238,13 +238,13 @@ class Admin extends BaseController
                 "function previewImg() {
                     const gambar = document.querySelector('#file');
                     const gambarLabel = document.querySelector('.custom-file-label');
-                    const gambarPreview = document.querySelector('.img-preview');
+                    const gambarPreview = document.querySelector('.img-prev');
                     gambarLabel.textContent = gambar.files[0].name;
                     const fileGambar = new FileReader();
                     fileGambar.readAsDataURL(gambar.files[0]);
                     fileGambar.onload = function(e) {
-                        gambarPreview.rsc = e.target.result;
-                    }
+                        gambarPreview.src = e.target.result;
+                    };
                 }
                 "
             ),

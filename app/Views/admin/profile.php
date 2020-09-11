@@ -19,7 +19,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Username : <?= $_SESSION['username'] ?></h5>
                                     <p class="card-text">Nama : <?= $_SESSION['nama'] ?></p>
-                                    <a href="#">
+                                    <a href="javaScript:void();">
                                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#EditProfileModal">
                                             <i class="fas fa-user-edit"> Edit Profile</i>
                                         </button>
@@ -43,8 +43,9 @@
                     <form action="<?= base_url('admin/edit-profile') ?>" method="post" enctype="multipart/form-data">
                         <div class="modal-body">
                             <center>
-                                <img src="<?= base_url('') . '/assets/images/profile/' . $_SESSION['gambar']; ?>" class="img-preview img-thumbnail mb-3">
+                                <img src="<?= base_url('') . '/assets/images/profile/' . $_SESSION['gambar']; ?>" class="img-thumbnail img-prev">
                             </center>
+                            <br>
                             <div class="form-group">
                                 <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap" value="<?= $_SESSION['nama']; ?>" required>
                             </div>
