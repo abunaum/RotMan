@@ -60,6 +60,7 @@ class Login extends BaseController
 
         $data = [
             'title' => 'Login',
+            'validation' => \Config\Services::validation(),
             'namaaplikasi' => $this->namaaplikasi,
             'header' => array(
                 array("/assets/css/bootstrap.min.css", "rel='stylesheet'"),
@@ -83,8 +84,23 @@ class Login extends BaseController
 
     public function cek()
     {
-        // $user = $this->userlogin->findAll();
-        // dd($cek);
+        if (!$this->validate([
+            'username' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} harus di isi !!!'
+                ]
+            ],
+            'password' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} harus di isi !!!'
+                ]
+            ]
+        ])) {
+            $validation = \Config\Services::validation();
+            return redirect()->to(base_url())->withInput()->with('validation', $validation);
+        }
         $username = $this->request->getVar('username');
         $password = $this->request->getVar('password');
         $user = $this->userlogin->where('username', $username)->findAll();
@@ -109,7 +125,8 @@ class Login extends BaseController
                 }
             } else {
                 $this->session->setTempdata('pesan', 'password-salah', 3);
-                return redirect()->to(base_url());
+                $validation = \Config\Services::validation();
+                return redirect()->to(base_url())->withInput();
             }
         } else {
             $this->session->setTempdata('pesan', 'login-error', 3);

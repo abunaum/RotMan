@@ -16,6 +16,7 @@ namespace App\Controllers;
  */
 
 use CodeIgniter\Controller;
+use CodeIgniter\Session\Session;
 
 class BaseController extends Controller
 {
@@ -42,6 +43,7 @@ class BaseController extends Controller
 		//--------------------------------------------------------------------
 		// E.g.:
 		// $this->session = \Config\Services::session();
+		session();
 		$this->namaaplikasi = 'RotMan';
 		$this->userlogin = new \App\Models\UserloginModel();
 		$this->router = new \App\Models\RouterModel();

@@ -19,21 +19,28 @@
                 </div>
                 <div class="card-title text-uppercase text-center py-3">Sign In</div>
                 <form action="<?= base_url('/cek'); ?>" method="POST">
+                    <?= csrf_field(); ?>
                     <div class="form-group">
                         <label for="exampleInputUsername" class="sr-only">Username</label>
                         <div class="position-relative has-icon-right">
-                            <input type="text" id="username" name="username" class="form-control input-shadow" placeholder="Username" required>
+                            <input type="text" id="username" name="username" class="form-control input-shadow <?= ($validation->hasError('username')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Username" autofocus value="<?= old('username'); ?>">
                             <div class="form-control-position">
                                 <i class="icon-user"></i>
+                            </div>
+                            <div class="invalid-feedback">
+                                <?= $validation->getError('username'); ?>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword" class="sr-only">Password</label>
                         <div class="position-relative has-icon-right">
-                            <input type="password" id="password" name="password" class="form-control input-shadow" placeholder="Enter Password" required>
-                            <div class="form-control-position">
+                            <input type="password" id="password" name="password" class="form-control input-shadow <?= ($validation->hasError('password')) ? 'is-invalid' : ''; ?>" placeholder="Masukkan Password">
+                            <div class=" form-control-position">
                                 <i class="icon-lock"></i>
+                            </div>
+                            <div class="invalid-feedback">
+                                <?= $validation->getError('password'); ?>
                             </div>
                         </div>
                     </div>

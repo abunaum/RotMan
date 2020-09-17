@@ -131,7 +131,7 @@ class Admin extends BaseController
             $router = $this->router->where('id', $id)->get();
             $datarouter = $router->getRowArray();
             if (!$cekrouter) {
-                return redirect()->to('/admin');
+                throw new \CodeIgniter\Exceptions\PageNotFoundException('Router dengan id ' . $id . ' tidak ada');
             } else {
                 $data = [
                     'title' => 'Detail Router',
@@ -243,5 +243,12 @@ class Admin extends BaseController
         ];
         // dd($totalrouter);
         return view('admin/profile', $data);
+    }
+    public function editprofile()
+    {
+        $nama = $this->request->getVar('nama');
+        $username = $_SESSION['username'];
+        $user = $this->userlogin->where('username', $username)->get()->getRowArray();
+        $gambar_lama = $user['gambar'];
     }
 }
