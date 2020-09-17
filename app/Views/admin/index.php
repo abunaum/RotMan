@@ -1,3 +1,5 @@
+<?= $this->extend('template/app/app'); ?>
+<?= $this->section('content'); ?>
 <div class="clearfix"></div>
 
 <div class="content-wrapper">
@@ -103,3 +105,4 @@
                 </div>
             </div>
         </div>
+        <?= $this->endsection(); ?>

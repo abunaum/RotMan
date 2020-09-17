@@ -71,12 +71,7 @@ class Admin extends BaseController
             'totalrouter' => $totalrouter,
             'pesan' => $flash
         ];
-        // dd($totalrouter);
-        echo view('template/app/header', $data);
-        echo view('template/app/sidebaradmin', $data);
-        echo view('template/app/topbar', $data);
-        echo view('admin/index', $data);
-        echo view('template/app/footer', $data);
+        return view('admin/index', $data);
     }
 
     public function addrouter()
@@ -147,11 +142,7 @@ class Admin extends BaseController
                     ),
                     'pesan' => $flash
                 ];
-                echo view('template/app/header', $data);
-                echo view('template/app/sidebaradmin', $data);
-                echo view('template/app/topbar', $data);
-                echo view('admin/router', $data);
-                echo view('template/app/footer', $data);
+                return view('admin/router', $data);
             }
         }
     }
@@ -251,10 +242,6 @@ class Admin extends BaseController
             'pesan' => $flash
         ];
         // dd($totalrouter);
-        echo view('template/app/header', $data);
-        echo view('template/app/sidebaradmin', $data);
-        echo view('template/app/topbar', $data);
-        echo view('admin/profile', $data);
-        echo view('template/app/footer', $data);
+        return view('admin/profile', $data);
     }
 }
