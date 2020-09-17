@@ -129,12 +129,12 @@ class Admin extends BaseController
         } else {
             $cekrouter = $this->router->where('id', $id)->findAll();
             $router = $this->router->where('id', $id)->get();
-            $datarouter = $router->getResultArray();
+            $datarouter = $router->getRowArray();
             if (!$cekrouter) {
                 return redirect()->to('/admin');
             } else {
                 $data = [
-                    'title' => 'Dashboard',
+                    'title' => 'Detail Router',
                     'namaaplikasi' => $this->namaaplikasi,
                     'router' => $datarouter,
                     'jsfooter' => array(

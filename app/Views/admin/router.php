@@ -16,43 +16,43 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <div class="card-title">Detail Router <?= $router[0]['nama']; ?></div>
+                        <div class="card-title">Detail Router <?= $router['nama']; ?></div>
                         <hr>
-                        <form action="<?= base_url('admin/connect') . "/" . $router[0]['id']; ?>" method="post">
+                        <form action="<?= base_url('admin/connect') . "/" . $router['id']; ?>" method="post">
                             <div class="form-group row">
                                 <label for="ip" class="col-sm-2 col-form-label">IP</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="ip" name="ip" value="<?= $router[0]['ip']; ?>" readonly>
+                                    <input type="text" class="form-control" id="ip" name="ip" value="<?= $router['ip']; ?>" readonly>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="port" class="col-sm-2 col-form-label">Port</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="port" name="port" value="<?= $router[0]['port']; ?>" readonly>
+                                    <input type="text" class="form-control" id="port" name="port" value="<?= $router['port']; ?>" readonly>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="username" class="col-sm-2 col-form-label">Username</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="username" name="username" value="<?= $router[0]['username']; ?>" readonly>
+                                    <input type="text" class="form-control" id="username" name="username" value="<?= $router['username']; ?>" readonly>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="password" class="col-sm-2 col-form-label">Password</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="password" name="password" value="<?= $router[0]['password']; ?>" readonly>
+                                    <input type="text" class="form-control" id="password" name="password" value="<?= $router['password']; ?>" readonly>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="nama" class="col-sm-2 col-form-label">Nama Hotspot</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="nama" name="nama" value="<?= $router[0]['nama']; ?>" readonly>
+                                    <input type="text" class="form-control" id="nama" name="nama" value="<?= $router['nama']; ?>" readonly>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="login" class="col-sm-2 col-form-label">Alamat Login</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="login" name="login" value="<?= $router[0]['login']; ?>" readonly>
+                                    <input type="text" class="form-control" id="login" name="login" value="<?= $router['login']; ?>" readonly>
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -75,25 +75,25 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <form action="<?= base_url('admin/edit-router') . "/" . $router[0]['id']; ?>" method="post">
+                            <form action="<?= base_url('admin/edit-router') . "/" . $router['id']; ?>" method="post">
                                 <div class="modal-body">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="ip" name="ip" placeholder="IP" value="<?= $router[0]['ip']; ?>" required>
+                                        <input type="text" class="form-control" id="ip" name="ip" placeholder="IP" value="<?= $router['ip']; ?>" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="number" class="form-control" id="port" name="port" placeholder="PORT" value="<?= $router[0]['port']; ?>" required>
+                                        <input type="number" class="form-control" id="port" name="port" placeholder="PORT" value="<?= $router['port']; ?>" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $router[0]['username']; ?>" required>
+                                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" value="<?= $router['username']; ?>" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="password" name="password" placeholder="Password" value="<?= $router[0]['password']; ?>" required>
+                                        <input type="text" class="form-control" id="password" name="password" placeholder="Password" value="<?= $router['password']; ?>" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Hotspot" value="<?= $router[0]['nama']; ?>" required>
+                                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Hotspot" value="<?= $router['nama']; ?>" required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="login" name="login" placeholder="Alamat Login Hotspot" value="<?= $router[0]['login']; ?>" required>
+                                        <input type="text" class="form-control" id="login" name="login" placeholder="Alamat Login Hotspot" value="<?= $router['login']; ?>" required>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
