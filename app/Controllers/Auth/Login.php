@@ -19,14 +19,64 @@ class Login extends BaseController
         }
         if (isset($_SESSION['pesan'])) {
             $pesan = $_SESSION['pesan'];
+            if ($pesan == 'password-salah') {
+                $flashicon = 'error';
+                $flashjudul = 'Maaf';
+                $flashtext = 'Password yang anda masukkan salah.';
+            }
+            if ($pesan == 'login-error') {
+                $flashicon = 'error';
+                $flashjudul = 'Maaf';
+                $flashtext = 'Username yang anda masukkan tidak ditemukan.';
+            }
+            if ($pesan == 'belum-login') {
+                $flashicon = 'error';
+                $flashjudul = 'Maaf';
+                $flashtext = 'Anda belum login.';
+            }
+            if ($pesan == 'bukan-admin') {
+                $flashicon = 'error';
+                $flashjudul = 'Maaf';
+                $flashtext = 'Anda bukan admin.';
+            }
+            if ($pesan == 'logout') {
+                $flashicon = 'success';
+                $flashjudul = 'Terimakasih';
+                $flashtext = 'Anda berhasil logout.';
+            }
+            $flash =    "<script>
+                        function pesan() {
+                            Swal.fire({
+                                icon: '" . $flashicon . "',
+                                title: '" . $flashjudul . "',
+                                text: '" . $flashtext . "'
+                                })
+                            }
+                        pesan();
+                    </script>";
         } else {
-            $pesan = '';
+            $flash = '';
         }
 
         $data = [
             'title' => 'Login',
             'namaaplikasi' => $this->namaaplikasi,
-            'pesan' => $pesan
+            'header' => array(
+                array("/assets/css/bootstrap.min.css", "rel='stylesheet'"),
+                array("/assets/css/animate.css", "rel='stylesheet' type='text/css'"),
+                array("/assets/css/icons.css", "rel='stylesheet' type='text/css'"),
+                array("/assets/css/app-style.css", "rel='stylesheet'")
+            ),
+            'footer' => array(
+                '/assets/js/jquery.min.js',
+                '/assets/js/popper.min.js',
+                '/assets/js/bootstrap.min.js',
+                '/assets/js/sidebar-menu.js',
+                '/assets/js/app-script.js',
+                '/assets/js/app-script.js',
+                '/assets/plugins/swal/sweetalert2.all.min.js'
+            ),
+            'pesan' => $flash
         ];
         return view('auth/login', $data);
     }

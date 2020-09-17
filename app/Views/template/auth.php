@@ -9,15 +9,10 @@
     <meta name="author" content="" />
     <title><?= $title . ' - ' . $namaaplikasi; ?></title>
     <!--favicon-->
-    <link rel="icon" href="<?= base_url(); ?>/favicon.ico" type="image/x-icon">
-    <!-- Bootstrap core CSS-->
-    <link href="<?= base_url(); ?>/assets/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- animate CSS-->
-    <link href="<?= base_url(); ?>/assets/css/animate.css" rel="stylesheet" type="text/css" />
-    <!-- Icons CSS-->
-    <link href="<?= base_url(); ?>/assets/css/icons.css" rel="stylesheet" type="text/css" />
-    <!-- Custom Style-->
-    <link href="<?= base_url(); ?>/assets/css/app-style.css" rel="stylesheet" />
+    <link rel='icon' href='<?= base_url(); ?>/favicon.ico' type='image/x-icon'>
+    <?php foreach ($header as $h) : ?>
+        <link href="<?= base_url() . $h[0] ?>" <?= $h[1]; ?> />
+    <?php endforeach; ?>
 </head>
 
 <body class="bg-theme bg-theme1">
@@ -80,79 +75,11 @@
 
     </div>
     <!--wrapper-->
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="<?= base_url(); ?>/assets/js/jquery.min.js"></script>
-    <script src="<?= base_url(); ?>/assets/js/popper.min.js"></script>
-    <script src="<?= base_url(); ?>/assets/js/bootstrap.min.js"></script>
-
-    <!-- sidebar-menu js -->
-    <script src="<?= base_url(); ?>/assets/js/sidebar-menu.js"></script>
-
-    <!-- Custom scripts -->
-    <script src="<?= base_url(); ?>/assets/js/app-script.js"></script>
-    <!-- Custom scripts -->
-    <script src="<?= base_url(); ?>/assets/js/app-script.js"></script>
-    <script src="<?= base_url(); ?>/assets/plugins/swal/sweetalert2.all.min.js"></script>
-    <?php if ($pesan == 'password-salah') : ?>
-        <script>
-            function pesan() {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Maaf',
-                    text: 'Password yang anda masukkan salah.'
-                })
-            }
-            pesan();
-        </script>
-    <?php endif; ?>
-    <?php if ($pesan == 'login-error') : ?>
-        <script>
-            function pesan() {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Maaf',
-                    text: 'Username yang anda masukkan tidak ditemukan.'
-                })
-            }
-            pesan();
-        </script>
-    <?php endif; ?>
-    <?php if ($pesan == 'logout') : ?>
-        <script>
-            function pesan() {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Terimakasih',
-                    text: 'Anda berhasil logout.'
-                })
-            }
-            pesan();
-        </script>
-    <?php endif; ?>
-    <?php if ($pesan == 'belum-login') : ?>
-        <script>
-            function pesan() {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Maaf',
-                    text: 'Anda belum login.'
-                })
-            }
-            pesan();
-        </script>
-    <?php endif; ?>
-    <?php if ($pesan == 'bukan-admin') : ?>
-        <script>
-            function pesan() {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Maaf',
-                    text: 'Anda bukan admin.'
-                })
-            }
-            pesan();
-        </script>
+    <?php foreach ($footer as $f) : ?>
+        <script src="<?= base_url() . $f ?>"></script>
+    <?php endforeach; ?>
+    <?php if (isset($pesan)) : ?>
+        <?= $pesan; ?>
     <?php endif; ?>
 </body>
 

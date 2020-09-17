@@ -1,0 +1,20 @@
+CRITICAL - 2020-09-17 00:42:09 --> Array to string conversion
+#0 /var/www/html/RotMan/app/Views/template/auth.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/RotMan/vendor/codeigniter4/framework/system/View/View.php(246): include('/var/www/html/R...')
+#2 /var/www/html/RotMan/vendor/codeigniter4/framework/system/View/View.php(257): CodeIgniter\View\View->render()
+#3 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Common.php(1119): CodeIgniter\View\View->render()
+#4 /var/www/html/RotMan/app/Controllers/Auth/Login.php(38): view()
+#5 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->index()
+#6 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#7 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#8 /var/www/html/RotMan/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/R...')
+#10 {main}
+CRITICAL - 2020-09-17 01:02:44 --> Undefined variable: pesan
+#0 /var/www/html/RotMan/app/Controllers/Auth/Login.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(918): App\Controllers\Auth\Login->index()
+#2 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController()
+#3 /var/www/html/RotMan/vendor/codeigniter4/framework/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest()
+#4 /var/www/html/RotMan/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 /var/www/html/RotMan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(34): require_once('/var/www/html/R...')
+#6 {main}
